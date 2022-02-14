@@ -1,12 +1,8 @@
 package facts
 
-import (
-	"fmt"
-)
-
-func init() {
-	fmt.Println("\n\tINFO: Paquete 'fact' inicializado correctamente...")
-}
+// func init() {
+// 	fmt.Println("\n\tDEBUG: Paquete 'fact' inicializado correctamente...")
+// }
 
 //Facts devuelve los valores del Json deseados.
 type Facts struct {

@@ -75,7 +75,8 @@ func main() {
 		os.Exit(1)
 	}
 	defer response.Body.Close()
-	fmt.Printf("\n\tINFO: Conexión a %s: %s\n", testURL, response.Status)
+
+	// fmt.Printf("\n\tDEBUG: Conexión a %s: %s\n", testURL, response.Status)
 
 	//TODO! Si el endpoint de la API es erronea aún parsea el HTML de la pagina incorrecta
 	data, err := ioutil.ReadAll(response.Body)
